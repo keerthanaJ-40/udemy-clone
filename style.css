@@ -5,7 +5,6 @@
 body{
     font-family: "Gabarito", sans-serif;
 }
-
 .navbar {
     display: flex;
     padding: 10px;
@@ -14,6 +13,10 @@ body{
     justify-content: space-between;
     border-bottom: solid black 1px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 .navbar__s1{
     color: #a435f0 ;
@@ -31,6 +34,7 @@ body{
     border: none;
     font-size: 20px;
     width: 100%;
+    background-color: transparent;
 }
 .navbar__s2 i{
     padding: 5px;
@@ -44,6 +48,24 @@ body{
     align-items: center;
     gap: 25px;
 }
+.mylearn{
+    position: relative;
+    cursor: pointer;
+}
+.mylearn__popup{
+    position: absolute;
+    background-color: #a435f0;
+    color: white;
+    border: solid black 1px;
+    width: 100px;  
+    top: 150%;
+    padding: 20px; 
+    right: 0;
+    display: none;
+}
+.mylearn:hover .mylearn__popup{
+    display: block;
+}
 .category{
     display: flex;
     justify-content: space-around ;
@@ -56,11 +78,22 @@ body{
     background-color: #a435f0;
     color: white;
     border-radius: 30px;
-    padding: 13px;
-    
+    padding: 13px; 
+}
+.image{
+    position: relative;
 }
 .image img{
     width: 100%;
+}
+.image__offer{
+    width: 30%;
+    border: solid black 2px;
+    background-color: white;
+    padding: 2%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
 }
 .recommended{
     padding: 10px;
@@ -71,11 +104,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
-
 }
 .course-card{ 
     width: 350px;
-
 }
 .course-card img{
     width: 100%;
