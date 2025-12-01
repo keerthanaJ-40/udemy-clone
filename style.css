@@ -213,5 +213,9 @@ body{
    .navbar__s4{
     display: block;
    }
+   .image__offer p{
+    width: 70%;
+
+   }
 
 }
