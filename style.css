@@ -99,7 +99,7 @@ body{
     width: 100%;
 }
 .image__offer{
-    width: 30%;
+    width: 40%;
     border: solid black 2px;
     background-color: #6B3CE2;
     color: white;
@@ -213,9 +213,6 @@ body{
    .navbar__s4{
     display: block;
    }
-   .image__offer p{
-    width: 70%;
-
-   }
+   
 
 }
